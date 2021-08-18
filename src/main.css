@@ -1,0 +1,43 @@
+body{
+    background: mistyrose;
+    margin: 0;
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.nameAge{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    font-size: xx-large;
+}
+.name{
+    margin-bottom: 0;
+}
+.age{
+    margin-top: 0;
+}
+.simpsons{
+    display: flex;
+    width: 500px;
+    text-align: start;
+}
+.info{
+    width: 300px;
+}
+.photo{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
