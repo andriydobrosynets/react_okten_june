@@ -7,7 +7,6 @@ let saveCar = (car) => {
         },
     })
         .then((response) => response.json())
-        .then((json) => console.log(json));
 }
 
 export {saveCar};
