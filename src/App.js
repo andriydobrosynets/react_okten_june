@@ -46,7 +46,7 @@ import './App.css';
 
 function App() {
   const [session, setSession] = useState(5)
-  const [timer, setTimer] = useState(2)
+  const [timer, setTimer] = useState(10)
   const [isRunning, setIsRunning] = useState(false)
   const [resetTime, setResetTime] = useState(900)
 
