@@ -1,4 +1,5 @@
 import {useReducer} from "react";
+import App from './App.css'
 // const reducer = (state, action) => {
 //   if (action.obj === 'a' && action.diya === '+') {
 //     return {...state, a: state.a++}
@@ -56,16 +57,16 @@ export default function App() {
     const initValue = {a: 0, b: 0, c: 0}
     let [{a, b, c}, dispatch] = useReducer(reducer, initValue);
     return (
-        <div>
-            <h1>state 1 - {a}</h1>
-            <button onClick={() => dispatch({type: 'INC', key: 'a', payload: 1})}>Plus 1</button>
-            <button onClick={() => dispatch({type: 'DEC', key: 'a', payload: 1})}>Minus 1</button>
-            <h1>state 2 - {b}</h1>
-            <button onClick={() => dispatch({type: 'INC', key: 'b', payload: 14})}>Plus 14</button>
-            <button onClick={() => dispatch({type: 'DEC', key: 'b', payload: 7})}>Minus 7</button>
-            <h1>state 3 - {c}</h1>
-            <button onClick={() => dispatch({type: 'INC', key: 'c', payload: 100})}>Plus 100</button>
-            <button onClick={() => dispatch({type: 'DEC', key: 'c', payload: 10})}>Minus 10</button>
+        <div className={"full"}>
+            <h1 className={'lichilnik'}>state 1 - {a}</h1>
+            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'a', payload: 1})}>Plus 1</button>
+            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'a', payload: 1})}>Minus 1</button>
+            <h1 className={'lichilnik'}>state 2 - {b}</h1>
+            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'b', payload: 14})}>Plus 14</button>
+            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'b', payload: 7})}>Minus 7</button>
+            <h1 className={'lichilnik'}>state 3 - {c}</h1>
+            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'c', payload: 100})}>Plus 100</button>
+            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'c', payload: 10})}>Minus 10</button>
         </div>
     );
 }
