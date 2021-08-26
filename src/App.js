@@ -47,9 +47,14 @@ const reducer = (state, action) => {
     switch (action.type) {
         case 'INC':
             return {...state, [action.key]: state[action.key] + action.payload};
-
         case 'DEC':
             return {...state, [action.key]: state[action.key] - action.payload};
+        case 'NULL':
+            return {...state, a: state.a=0};
+        case 'NULL-1':
+            return {...state, a: state.b=0};
+        case 'NULL-2':
+            return {...state, a: state.c=0};
         default:
             return state
     }}
@@ -59,20 +64,29 @@ export default function App() {
     return (
         <div className={"full"}>
             <h1 className={'lichilnik'}>{a}</h1>
-            <div className={'button'}>
-            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'a', payload: 1})}>Plus 1</button>
-            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'a', payload: 1})}>Minus 1</button>
-            </div>
+                <div className={'button'}>
+                    <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'a', payload: 1})}>Plus 1</button>
+                    <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'a', payload: 1})}>Minus 1</button>
+                </div>
+                <div className={'footer'}>
+                    <button className={'null'} onClick={() => dispatch({type: 'NULL', key: 'a'})}>Очистити</button>
+                </div>
             <h1 className={'lichilnik'}>{b}</h1>
-            <div className={'button'}>
-            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'b', payload: 14})}>Plus 14</button>
-            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'b', payload: 7})}>Minus 7</button>
-            </div>
+                <div className={'button'}>
+                    <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'b', payload: 14})}>Plus 14</button>
+                    <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'b', payload: 7})}>Minus 7</button>
+                </div>
+                <div className={'footer'}>
+                    <button className={'null'} onClick={() => dispatch({type: 'NULL-1', key: 'b'})}>Очистити</button>
+                </div>
             <h1 className={'lichilnik'}>{c}</h1>
-            <div className={'button'}>
-            <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'c', payload: 100})}>Plus 100</button>
-            <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'c', payload: 10})}>Minus 10</button>
-            </div>
+                <div className={'button'}>
+                    <button className={'plus'} onClick={() => dispatch({type: 'INC', key: 'c', payload: 100})}>Plus 100</button>
+                    <button className={'minus'} onClick={() => dispatch({type: 'DEC', key: 'c', payload: 10})}>Minus 10</button>
+                </div>
+                <div className={'footer'}>
+                    <button className={'null'} onClick={() => dispatch({type: 'NULL-2', key: 'c'})}>Очистити</button>
+                </div>
         </div>
     );
 }
