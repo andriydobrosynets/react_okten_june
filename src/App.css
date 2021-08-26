@@ -1,1 +1,43 @@
+body{
+    background: mistyrose;
+}
+.lichilnik{
+    text-align: center;
+    font-size: 250px;
+    background: mistyrose;
+    margin: 0;
 
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.plus{
+    background: #c8ffec;
+    text-decoration: none;
+    border: none;
+    width: 40%;
+    height: 100px;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.32);
+ }
+.minus{
+    background: #fdfdc6;
+    text-decoration: none;
+    border: none;
+    width: 40%;
+    height: 100px;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.32);
+}
+.null{
+    background: #fdddb7;
+    text-decoration: none;
+    border: none;
+    width: 40%;
+    height: 100px;
+    margin-top: 44px;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.32);
+}
