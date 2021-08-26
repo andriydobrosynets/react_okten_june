@@ -1,18 +1,32 @@
 // const reducer = (state, action) => {
+//     switch (action.type) {
+//         case 'INC':
+//             return {...state, [action.key]: state[action.key] + action.payload};
 //
-//     if (action.obj === '1' && action.diya === '+') {
-//         return {...state, a: state.a++}
-//     } else if (action.obj === '1' && action.diya === '-') {
-//         return {...state, a: state.a--}
-//     } else if (action.obj === '2' && action.diya === '+') {
-//         return {...state, b: state.b++}
-//     } else if (action.obj === '2' && action.diya === '-') {
-//         return {...state, b: state.b--}
-//     } else if (action.obj === '3' && action.diya === '+') {
-//         return {...state, c: state.c++}
-//     } else if (action.obj === '3' && action.diya === '-') {
-//         return {...state, c: state.c--}
+//         case 'DEC':
+//             return {...state, [action.key]: state[action.key] - 1};
+//         default:
+//             return state
 //     }
-//     return {...state};
+
+
+    //  if
+    //     (action.obj === 'a' && action.diya === '+')
+    // {
+    //     return {...state, a: state.a + 1}
+    // }
+    // else
+    //     if (action.obj === 'a' && action.diya === '-') {
+    //         return {...state, a: state.a--}
+    //     } else if (action.obj === 'b' && action.diya === '+') {
+    //         return {...state, b: state.b++}
+    //     } else if (action.obj === 'b' && action.diya === '-') {
+    //         return {...state, b: state.b--}
+    //     } else if (action.obj === 'c' && action.diya === '+') {
+    //         return {...state, c: state.c++}
+    //     } else if (action.obj === 'c' && action.diya === '-') {
+    //         return {...state, c: state.c--}
+    //     }
+    //     return {...state};
 // }
-// export default reducer()
+// export default reducer
