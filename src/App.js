@@ -1,5 +1,5 @@
 import {useReducer} from "react";
-import './App.css';
+ import './App.css';
 // const reducer = (state, action) => {
 //   if (action.obj === 'a' && action.diya === '+') {
 //     return {...state, a: state.a++}
