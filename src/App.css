@@ -22,7 +22,8 @@ body{
   border: none;
   width: 40%;
   height: 100px;
-  -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.32);
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.2);
+
 }
 .minus{
   background: #fdfdc6;
