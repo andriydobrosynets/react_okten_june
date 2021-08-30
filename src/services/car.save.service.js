@@ -1,5 +1,5 @@
 let saveCar = (car) => {
-    return fetch("http://195.72.146.25/api/v1/cars", {
+    return fetch("http://91.201.233.14/api/v1/cars", {
         method: 'POST',
         body: JSON.stringify(car),
         headers: {
