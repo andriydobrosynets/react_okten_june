@@ -1,11 +1,13 @@
 import './App.css';
+import {useSelector} from "react-redux";
 
-function App() {
+export default function App() {
+    let state = useSelector(state => state)
   return (
     <div>
-
+app
     </div>
   );
 }
 
-export default App;
+
